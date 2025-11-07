@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 from pathlib import Path
-
+joblib.load(Path(__file__).parent / "25RP18587.joblib")
 # Load your trained model saved with joblib
 model_path = Path(__file__).parent / "25RP18587.joblib"
 if not model_path.is_file():
